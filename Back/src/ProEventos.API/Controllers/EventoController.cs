@@ -34,13 +34,13 @@ namespace ProEventos.API.Controllers
 
 
         [HttpPost]
-        public Evento Post(Evento evento)
+        public void Post(Evento evento)
         {
-           return evento;//_context.Eventos.Add(evento);
+           //return _context.Eventos.Add(evento);
         }
 
         [HttpPut("{id}")]
-        public string Put(int id)
+         public string Put(int id)
         {
            return $"Exemplo de put {id}";
         }
