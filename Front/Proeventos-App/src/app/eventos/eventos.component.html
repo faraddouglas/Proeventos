@@ -30,7 +30,7 @@
     </thead>
     <tbody *ngIf="eventos; else elseBlock">
         <tr *ngFor="let evento of eventosFiltrados">
-            <td>{{evento.eventoId}}</td>
+            <td>{{evento.id}}</td>
             <td>
                 <img  *ngIf="exibirImagem"
                     src="../../assets/{{evento.imageURL}}" 
@@ -43,8 +43,8 @@
             <td>{{evento.qtdPessoas}}</td>
             <td>{{evento.lote}}</td>
             <td>
-                <button class="btn btn-primary btn-sm mx-2">Editar</button>
-                <button class="btn btn-danger btn-sm mx-2" >Deletar</button>
+                <button class="btn btn-primary btn-sm mx-2"><i class="fa-solid fa-pencil"></i></button>
+                <button class="btn btn-danger btn-sm mx-2" ><i class="fa-solid fa-trash"></i></button>
             </td>
         </tr>
     </tbody>
